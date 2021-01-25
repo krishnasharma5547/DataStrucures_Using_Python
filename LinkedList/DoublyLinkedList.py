@@ -112,7 +112,7 @@ class DoublyLinkedList:
             temp.pre.next = None
         else:
             temp.pre.next = temp.next
-            temp.next.pre = temp.pre
+            temp.next.pre = temp.pre         # check importatnt
 
 
 dll = DoublyLinkedList()
