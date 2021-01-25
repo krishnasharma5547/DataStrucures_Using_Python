@@ -1,4 +1,5 @@
 class Node:
+    '''Created by krishna kant sharma B.tech 3rd year '''
 
     def __init__(self, data):
         self.data = data
@@ -95,14 +96,23 @@ class SinglyLinkedList:
 
 
 ll = SinglyLinkedList()
-ll.deleteAtEnd()
-ll.insertAtEnd(20)
-ll.insertAtEnd(30)
-ll.insertInBetween(40, ll.head.next)
-ll.insertAtEnd(50)
-ll.insertAtBeggning(10)
-ll.deleteAtEnd()
-ll.deleteAnyNode(30)
-ll.deleteAtPosition(2)
-ll.printList()
-print(ll.listLength())
+ll.deleteAtEnd()  # No element to delete
+ll.insertAtEnd(20)  # 20
+ll.insertAtEnd(30)  # 30
+ll.insertInBetween(40, ll.head.next)  # 20 30 40
+ll.insertAtEnd(50)  # 20 30 40 50
+ll.insertAtBeggning(10)  # 10 20 30 40 50
+ll.deleteAtEnd()  # 10 20 30 40
+ll.deleteAnyNode(30)  # 10 20 40
+ll.deleteAtPosition(2)  # 10 20
+ll.printList()  # will print
+print(ll.listLength())  # 2
+
+'''
+                           output 
+-----------------------------------------------------------
+No element to delete
+10
+20
+2
+'''
